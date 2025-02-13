@@ -1,235 +1,139 @@
+[![Socket Badge](https://socket.dev/api/badge/npm/package/fca-abdullah-api)](https://socket.dev/npm/package/cyber-cat)
 
-# Free Open AI ChatGPT API Keys
+## Important !
 
-Get a free OpenAI ChatGPT API key to test your ChatGPT projects for Free. These keys allows you to explore and experiment with OpenAI's powerful language model, helping you integrate AI-driven features into your applications without any cost.
+Special Thanks: 
+![image](https://github.com/KanzuXHorizon/Fca-Horizon-Remastered/assets/125113101/0a455054-b7f4-499d-b4b6-c91fd0569ce4)
 
-## 🚀 What is OpenAI ChatGPT API?
-The OpenAI ChatGPT API is a powerful tool that allows developers to integrate OpenAI's ChatGPT model into their applications, products, or services. By providing an interface to interact with the language model programmatically, the API enables the creation of chatbots, automated customer support systems, content generation tools, and more. 
+This package require NodeJS 14.17.0 to work properly.
 
+## Notification !
 
-## Get Your OpenAI ChatGPT API for Free 
-The OpenAI ChatGPT API can be quite costly, making it challenging to use for testing projects. However, we offer a free ChatGPT API key specifically for testing purposes. This allows you to experiment with the API and integrate it into your projects without incurring high costs, giving you the opportunity to explore its features and capabilities without financial constraints.
++ We will have Example Video on Channel "Abdulla Tech 49"
 
-https://hdstockimages.com/get-free-openai-chatgpt-api/
+Original Project(Deprecated): https://github.com/Schmavery/facebook-chat-api
 
+## Support For : 
 
-## Usage/Examples using Python
++ Support English, VietNamese !,
++ All bot if using listenMqtt first.
 
-Usage of OpenAI API key in python.
+# Api Cho ChatBot Messenger
 
-```javascript
-import requests
+Facebook Đã Có Và Cho Người Dùng Tạo Api Cho Chatbots 😪 Tại Đey => [Đây Nè](https://developers.facebook.com/docs/messenger-platform).
 
-# Define the prompt to be sent
-prompt = 'Please generate a simple blog post according to this title "What is CHATGPT"'
+### Api Này Có Thể Khiến Cho Bạn Payy Acc Như Cách Acc Bạn Chưa Từng Có, Hãy Chú Ý Nhé =))
 
-# Enter E-mail to generate API
-api_key = 'Enter your E-mail Address to get the free ChatGPT API'
+Lưu Ý ! Nếu Bạn Muốn Sài Api Này Hãy Xem Document Tại [Đây Nè](https://github.com/Schmavery/facebook-chat-api).
 
-# Define the default model if none is specified
-default_model = 'gpt-3.5-turbo'
+## Tải Về 
 
-# Uncomment the model you want to use, and comment out the others
-# model = 'gpt-4'
-# model = 'gpt-4-32k'
-# model = 'gpt-3.5-turbo-0125'
-model = default_model
-
-# Build the URL to call
-api_url = f'http://195.179.229.119/gpt/api.php?prompt={requests.utils.quote(prompt)}&api_key={requests.utils.quote(api_key)}&model={requests.utils.quote(model)}'
-
-try:
-    # Execute the HTTP request
-    response = requests.get(api_url)
-    response.raise_for_status()  # Raise an error for bad HTTP status codes
-
-    # Parse and print the response
-    data = response.json()
-    print(data)
-
-except requests.RequestException as e:
-    # Print any errors
-    print(f'Request Error: {e}')
+Nếu Bạn Muốn Sử Dụng, Hãy Tải Nó Bằng Cách:
+```bash
+npm i fca-abdullah-api
+```
+or
+```bash
+npm install fca-abdullah-api
 ```
 
+Nó Sẽ Tải Vô node_modules (Lib Của Bạn) - Lưu Ý Replit Sẽ Không Hiện Đâu Mà Tìm 😪
 
-## Usage/Examples using PHP(cURL)
+### Tải Bản Mới Nhất Hoặc Update
 
-Usage of OpenAI API key in PHP.
-
-```javascript
-<?php
-// Define the prompt to be sent
-$prompt = 'Please generate a simple blog post according to this title "What is CHATGPT"';
-
-// Enter E-mail to generate API
-$apiKey = 'Enter your E-mail Address to get the free ChatGPT API';
-
-// Define the default model if none is specified
-$defaultModel = 'gpt-3.5-turbo';
-
-// Uncomment the model you want to use, and comment out the others
-// $model = 'gpt-4';
-// $model = 'gpt-4-32k';
-// $model = 'gpt-3.5-turbo-0125';
-$model = $defaultModel;
-
-// Build the URL to call
-$apiUrl = 'http://195.179.229.119/gpt/api.php?prompt=' . urlencode($prompt) . '&api_key=' . urlencode($apiKey) . '&model=' . urlencode($model);
-
-// Initialize cURL session
-$ch = curl_init();
-
-// Set cURL options
-curl_setopt($ch, CURLOPT_URL, $apiUrl);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-// Execute the cURL request
-$response = curl_exec($ch);
-
-// Check for cURL errors
-if ($response === false) {
-    echo 'cURL Error: ' . htmlspecialchars(curl_error($ch));
-} else {
-    $data = json_decode($response, true);
-    print_r($data);
-}
-
-// Close the cURL session
-curl_close($ch);
-?>
+Nếu Bạn Muốn Sử Dụng Phiên Bản Mới Nhất Hay Cập Nhật Thì Hãy Vô Terminal Hoặc Command Promt Nhập :
+```bash
+npm install fca-abdullah-api@latest
+```
+Hoặc
+```bash
+npm i fca-abdullah@latest
 ```
 
+## Nếu Bạn Muốn Test Api 
 
-## Usage/Examples using Node JS
+Lợi Ích Cho Việc Này Thì Bạn Sẽ Không Tốn Thời Gian Pay Acc Và Có Acc 😪
+Hãy Sử Dụng Với Tài Khoản Thử Nghiệm => [Facebook Whitehat Accounts](https://www.facebook.com/whitehat/accounts/).
 
-Usage of OpenAI API key in Node JS.
+## Cách Sử Dụng
 
 ```javascript
-const axios = require('axios');
-const qs = require('querystring');
+const login = require("fca-horizon-remastered"); // lấy từ lib ra 
 
-// Define the prompt to be sent
-const prompt = 'Please generate a simple blog post according to this title "What is CHATGPT"';
+// đăng nhập
+login({email: "Gmail Account", password: "Mật Khẩu Facebook Của Bạn"}, (err, api) => {
 
-// Enter E-mail to generate API
-const apiKey = 'Enter your E-mail Address to get the free ChatGPT API';
+    if(err) return console.error(err); // trường hợp lỗi
 
-// Define the default model if none is specified
-const defaultModel = 'gpt-3.5-turbo';
+    // tạo bot tự động nhái theo bạn:
+    api.listenMqtt((err, message) => {
+        api.sendMessage(message.body, message.threadID);
+    });
 
-// Uncomment the model you want to use, and comment out the others
-// const model = 'gpt-4';
-// const model = 'gpt-4-32k';
-// const model = 'gpt-3.5-turbo-0125';
-const model = defaultModel;
-
-// Build the URL to call
-const apiUrl = `http://195.179.229.119/gpt/api.php?${qs.stringify({
-  prompt: prompt,
-  api_key: apiKey,
-  model: model
-})}`;
-
-// Execute the HTTP request
-axios.get(apiUrl)
-  .then(response => {
-    // Print the response data
-    console.log(response.data);
-  })
-  .catch(error => {
-    // Print any errors
-    console.error('Request Error:', error.message);
-  });
+});
 ```
-For any other language integration, visit: https://hdstockimages.com/get-free-openai-chatgpt-api/
 
-## Video Preview of using API in PHP
-[![Video Preview of using API in PHP](https://img.youtube.com/vi/67oiLyiEwgQ/0.jpg)](https://www.youtube.com/watch?v=67oiLyiEwgQ)
+Kết Quả Là Nó Sẽ Nhái Bạn Như Hình Dưới:
+<img width="517" alt="screen shot 2016-11-04 at 14 36 00" src="https://cloud.githubusercontent.com/assets/4534692/20023545/f8c24130-a29d-11e6-9ef7-47568bdbc1f2.png">
 
-## Features
+Nếu Bạn Muốn Sử Dụng Nâng Cao Thì Hãy Sử Dụng Các Loại Bot Được Liệt Kê Ở Trên !
 
-- **Get API Key Without Registration**: Obtain your ChatGPT API key instantly without the need for a registration process.
-- **Test Your OpenAI ChatGPT Projects for Free**: Experiment with the API at no cost, allowing you to explore and refine your projects before committing to any paid plans.
-- **Support All Programming Languages**: Integrate the ChatGPT API with any programming language, including Python, JavaScript, Java, PHP, Ruby, and more.
-- **Instant Access to Features**: Start using all of ChatGPT's advanced capabilities immediately, including natural language understanding and generation.
-- **Customizable Responses**: Tailor the API's behavior and output to fit specific use cases by adjusting prompts and response parameters.
-- **Real-time Interaction**: Engage in real-time conversations, providing immediate feedback and dynamic interaction in your applications.
-- **Context Retention**: Maintain context across multiple interactions, ensuring that conversations are coherent and contextually relevant.
-- **Robust Documentation and Support**: Access comprehensive documentation and support resources to guide you through integration, troubleshooting, and maximizing the API's potential.
-- **Scalable for Various Use Cases**: Adapt the API for both small test projects and large-scale deployments, accommodating different levels of demand and complexity.
-- **Multi-language Support**: Utilize the API’s ability to handle multiple languages, making it suitable for global applications and diverse user bases.
+## Danh Sách
 
+Bạn Có Thể Đọc Full Api Tại => [here](DOCS.md).
 
+## Cài Đặt Cho Mirai: 
 
+Bạn Cần Vô File Mirai.js,Sau Đó Tìm Đến Dòng
+```js
+    var login = require('tùy bot'); 
+    /* Có thể là :
+        var login = require('@maihuybao/fca-Unofficial');
+        var login = require('fca-xuyen-get');
+        var login = require('fca-unofficial-force');
+    ...   
+    */
+```
 
-# Type of Application you can develop using Free Open AI ChatGPT API 
+Và Thay Nó Bằng:
 
-Bellow is a list of Application which you can develop or create using Free Open AI ChatGPT API.
+```js
+    var login = require('fca-horizon-remastered')
+```
 
-### 1. Virtual Customer Support Agent
-Automate customer service with a chatbot that handles inquiries, resolves issues, and provides product information.
+Sau Đó Thì Chạy Bình Thường Thôi  !
 
-### 2. Personalized Content Generator
-Generate personalized blog posts, social media content, or marketing copy based on user inputs.
+## Tự Nghiên Cứu
 
-### 3. Language Translation Tool
-Create a real-time translation tool to help users communicate across different languages.
+Nếu Bạn Muốn Tự Nghiên Cứu Hoặc Tạo Bot Cho Riêng Bạn Thì Bạn Hãy Vô Cái Này Đọc Chức Năng Của Nó Và Cách Sử Dụng => [Link](https://github.com/Schmavery/facebook-chat-api#Unofficial%20Facebook%20Chat%20API)
 
-### 4. Intelligent Tutor or Learning Assistant
-Build an educational app that helps students learn new concepts, provides explanations, and answers questions in various subjects.
+------------------------------------
 
-### 5. Creative Writing Assistant
-Assist writers by providing suggestions, generating ideas, or even writing complete stories, poems, or scripts.
+### Lưu Lại Thông Tin Đăng Nhập.
 
-### 6. Virtual Interview Coach
-Simulate interview scenarios, providing feedback and helping users prepare for job interviews.
+Để Lưu Lại Thì Bạn Cần 1 Apstate Kiểu (Cookie, etc,..) Để Lưu Lại Hoặc Là Sử Dụng Mã Login Như Trên Để Đăng Nhập !
 
-### 7. Customized News Aggregator
-Curate articles and summaries based on the user’s interests and preferences.
+Và Chế Độ Này Đã Có Sẵn Trong 1 Số Bot Việt Nam Nên Bạn Cứ Yên Tâm Nhé !
 
-### 8. Mental Health Chatbot
-Offer mental health advice, coping strategies, and emotional support through a supportive chatbot.
+__Hướng Dẫn Với Appstate__
 
-### 9. Interactive Storytelling Game
-Develop a game where players interact with a dynamic story that changes based on their choices, powered by ChatGPT.
+```js
+const fs = require("fs");
+const login = require("fca-horizon-remastered");
 
-### 10. Language Learning Companion
-Help users practice a new language through conversation, vocabulary exercises, and grammar tips.
+var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"}; // thông tin tk
 
-### 11. Recipe Generator
-Generate recipes based on available ingredients, dietary preferences, or specific cuisine requests.
+login(credentials, (err, api) => {
+    if(err) return console.error(err);
+    // đăng nhập
+    fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState(), null,'\t')); //tạo appstate
+});
+```
 
-### 12. Business Idea Validator
-Help entrepreneurs brainstorm and refine business ideas, providing market insights and feedback.
+Hoặc Dễ Dàng Hơn ( Chuyên Nghiệp ) Bạn Có Thể Dùng => [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate) Để Lấy Fbstate And Rename Lại Thành Apstate Cũng Được ! (appstate.json)
 
-### 13. Code Debugging Assistant
-Assist developers in debugging and optimizing code by providing explanations, suggestions, and solutions.
+------------------------------------
 
-### 14. Interactive FAQ System
-Answer user questions interactively, providing detailed and personalized responses.
+## FAQS
 
-### 15. Virtual Travel Assistant
-Plan trips by suggesting itineraries, recommending destinations, and providing travel tips.
-
-### 16. Virtual Life Coach
-Provide motivation, goal-setting strategies, and personalized advice for self-improvement.
-
-### 17. Customized Workout Planner
-Generate personalized workout routines based on user goals, fitness levels, and preferences.
-
-### 18. E-commerce Shopping Assistant
-Help users find products, compare prices, and make purchasing decisions.
-
-### 19. Book or Movie Recommendation System
-Recommend books, movies, or TV shows based on user preferences and past choices.
-
-### 20. Social Media Content Analyzer
-Analyze social media posts, providing insights on tone, engagement potential, and content improvement.
-
-## Limitations
-
-- Free for personal use only
-- It's not an official API key but we purchased a Tier 5 Plan and providing for testing purpose only. 
-- Limit of 50k words per day
-- API Key is valid for 24 hours. Generate a new API Key after expiration from this link: https://hdstockimages.com/get-free-openai-chatgpt-api/
+FAQS => [Link](https://github.com/Schmavery/facebook-chat-api#FAQS)
